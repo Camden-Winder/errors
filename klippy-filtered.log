@@ -1,0 +1,100 @@
+pid_kp = 63.418
+inner_pid_kp = 41.463
+pid_ki = 1.342
+inner_pid_ki = 6.190
+pid_kd = 749.125
+inner_pid_kd = 69.431
+=======================
+MMU: Loaded [mmu_machine]
+MMU: Building mmu_unit #0 [mmu_unit unit0] ---------------------------
+MMU: Loaded: [tmc2209 extruder]
+MMU: Created: [mmu_extruder extruder]
+MMU: No software-controlled TMC for unit0_gear on QIDI mmu_unit unit0
+MMU: Sharing gear stepper config rotation_distance=13.6 with [mmu_stepper unit0_gear_1]
+MMU: Sharing gear stepper config gear_ratio=1:1 with [mmu_stepper unit0_gear_1]
+MMU: Sharing gear stepper config microsteps=16 with [mmu_stepper unit0_gear_1]
+MMU: Sharing gear stepper config full_steps_per_rotation=200 with [mmu_stepper unit0_gear_1]
+MMU: Sharing gear stepper config rotation_distance=13.6 with [mmu_stepper unit0_gear_2]
+MMU: Sharing gear stepper config gear_ratio=1:1 with [mmu_stepper unit0_gear_2]
+MMU: Sharing gear stepper config microsteps=16 with [mmu_stepper unit0_gear_2]
+MMU: Sharing gear stepper config full_steps_per_rotation=200 with [mmu_stepper unit0_gear_2]
+MMU: Sharing gear stepper config rotation_distance=13.6 with [mmu_stepper unit0_gear_3]
+MMU: Sharing gear stepper config gear_ratio=1:1 with [mmu_stepper unit0_gear_3]
+MMU: Sharing gear stepper config microsteps=16 with [mmu_stepper unit0_gear_3]
+MMU: Sharing gear stepper config full_steps_per_rotation=200 with [mmu_stepper unit0_gear_3]
+MMU: Loaded: [mmu_stepper unit0_gear]
+MMU: Created: MmuDrive for gate 0 using mmu_stepper unit0_gear
+MMU: Loaded: [mmu_stepper unit0_gear_1]
+MMU: Created: MmuDrive for gate 1 using mmu_stepper unit0_gear_1
+MMU: Loaded: [mmu_stepper unit0_gear_2]
+MMU: Created: MmuDrive for gate 2 using mmu_stepper unit0_gear_2
+MMU: Loaded: [mmu_stepper unit0_gear_3]
+MMU: Created: MmuDrive for gate 3 using mmu_stepper unit0_gear_3
+MMU: Read: [mmu_unit_parameters unit0]
+MMU: Created: Calibrator for unit0
+MMU: Created VirtualSelector selector
+MMU: Created MmuSensor(default:extruder)
+MMU: Created: [mmu_toolhead default]
+MMU: Created MmuSensor(mmu_entry_0)
+MMU: Created MmuSensor(mmu_entry_1)
+MMU: Created MmuSensor(mmu_entry_2)
+MMU: Created MmuSensor(mmu_entry_3)
+MMU: Created MmuSensor(unit0:mmu_shared_exit)
+MMU: Created: [mmu_sensors unit0]
+MMU: - No mmu_espooler specified
+MMU: Created virtual led chain: [led unit0_mmu_exit_leds]
+MMU: Created virtual led chain: [led unit0_mmu_entry_leds]
+MMU: Created virtual led chain: [led unit0_mmu_status_leds]
+MMU: Created virtual led chain: [led unit0_mmu_logo_leds]
+MMU: Created: [mmu_leds unit0]
+MMU: - No mmu_encoder specified
+MMU: Created MmuSensor(unit0:filament_tension)
+MMU: Created: [mmu_buffer unit0]
+MMU: Created: sync-feedback / autotune controller for unit unit0
+MMU: Created: heater and environment manager for unit unit0
+MMU: Created: fan manager for unit unit0
+MMU: Created: [mmu_nfc_reader unit0_nfc_a]
+MMU: Created: [mmu_nfc_reader unit0_nfc_b]
+MMU: Created MmuSensor(mmu_nfc_0)
+MMU: Created MmuSensor(mmu_nfc_1)
+MMU: Created MmuSensor(mmu_nfc_2)
+MMU: Created MmuSensor(mmu_nfc_3)
+MMU: Created: nfc manager for unit unit0
+MMU: Created digital endstop on stepper unit0_gear for unit0 using mmu_entry_0
+MMU: Created digital endstop on stepper unit0_gear_1 for unit0 using mmu_entry_1
+MMU: Created digital endstop on stepper unit0_gear_2 for unit0 using mmu_entry_2
+MMU: Created digital endstop on stepper unit0_gear_3 for unit0 using mmu_entry_3
+MMU: Created analog endstop on stepper unit0_gear for unit0 using mmu_nfc_0
+MMU: Created analog endstop on stepper unit0_gear_1 for unit0 using mmu_nfc_1
+MMU: Created analog endstop on stepper unit0_gear_2 for unit0 using mmu_nfc_2
+MMU: Created analog endstop on stepper unit0_gear_3 for unit0 using mmu_nfc_3
+MMU: Created digital endstop on stepper unit0_gear, unit0_gear_1, unit0_gear_2, unit0_gear_3 for unit0 using unit0:mmu_shared_exit
+MMU: Created digital endstop on stepper extruder for unit0 using unit0:filament_tension
+MMU: Shared unit0:filament_tension endstop with stepper unit0_gear, unit0_gear_1, unit0_gear_2, unit0_gear_3 for unit0
+MMU: Created digital endstop on stepper unit0_gear, unit0_gear_1, unit0_gear_2, unit0_gear_3 for unit0 using default:extruder
+MMU: Created: [mmu_unit unit0]
+MMU: Read: [mmu_parameters]
+MMU: Log: /home/mks/printer_data/logs/mmu.log
+MMU: Created MmuController
+MMU: Created SaveVariableManager
+Extruder max_extrude_ratio=207.875844
+mcu 'mcu': Starting serial connect
+webhooks client 548153846032: New connection
+webhooks client 548153846032: Client info {'program': 'Moonraker', 'version': 'v0.11.0-1-g1cfb0c4'}
+Loaded MCU 'mcu' 149 commands (Kalico qidi-q2-kalico-bleeding-edge-v2-e0a57a0b55c6 / gcc: (Arm GNU Toolchain 15.2.Rel1 (Build arm-15.86)) 15.2.1 20251203 binutils: (Arm GNU Toolchain 15.2.Rel1 (Build arm-15.86)) 2.45.1.20251203)
+MCU 'mcu' config: ADC_MAX=4095 BUS_PINS_i2c1=PB6,PB7 BUS_PINS_i2c1a=PB8,PB9 BUS_PINS_i2c2=PB10,PB11 BUS_PINS_i2c2_PF1_PF0=PF1,PF0 BUS_PINS_i2c2a=PH4,PH5 BUS_PINS_i2c3=PA8,PC9 BUS_PINS_i2c3a=PH7,PH8 BUS_PINS_sdio=PC12,PD2,PC8,PC9,PC10,PC11 BUS_PINS_spi1=PA6,PA7,PA5 BUS_PINS_spi1a=PB4,PB5,PB3 BUS_PINS_spi2=PB14,PB15,PB13 BUS_PINS_spi2a=PC2,PC3,PB10 BUS_PINS_spi2b=PI2,PI3,PI1 BUS_PINS_spi3=PB4,PB5,PB3 BUS_PINS_spi3a=PC11,PC12,PC10 CLOCK_FREQ=200000000 MCU=stm32f407xx MCU_TEMPERATURE_TYPE=gd32f425 PWM_MAX=256 RESERVE_PINS_USB=PA11,PA12 RESERVE_PINS_crystal=PH0,PH1 STATS_SUMSQ_BASE=256 STEPPER_OPTIMIZED_EDGE=25 STEPPER_STEP_BOTH_EDGE=1
+mcu 'THR': Starting serial connect
+Loaded MCU 'THR' 137 commands (Kalico qidi-q2-kalico-bleeding-edge-v2-e0a57a0b55c6 / gcc: (Arm GNU Toolchain 15.2.Rel1 (Build arm-15.86)) 15.2.1 20251203 binutils: (Arm GNU Toolchain 15.2.Rel1 (Build arm-15.86)) 2.45.1.20251203)
+MCU 'THR' config: ADC_MAX=4095 BUS_PINS_i2c1=PB6,PB7 BUS_PINS_i2c1a=PB8,PB9 BUS_PINS_i2c2=PB10,PB11 BUS_PINS_spi1=PA6,PA7,PA5 BUS_PINS_spi1a=PB4,PB5,PB3 BUS_PINS_spi2=PB14,PB15,PB13 BUS_PINS_spi2_PB14_PC0_PB13=PB14,PC0,PB13 BUS_PINS_spi3=PB4,PB5,PB3 CLOCK_FREQ=120000000 MCU=stm32f103xe PWM_MAX=256 RECEIVE_WINDOW=192 RESERVE_PINS_serial=PB7,PB6 SERIAL_BAUD=500000 STATS_SUMSQ_BASE=256 STEPPER_OPTIMIZED_EDGE=15 STEPPER_STEP_BOTH_EDGE=1
+MCU error during connect
+Traceback (most recent call last):
+  File "/home/mks/klipper/klippy/printer.py", line 393, in _connect
+    cb()
+  File "/home/mks/klipper/klippy/mcu.py", line 1123, in _connect
+    config_params = self._send_get_config()
+  File "/home/mks/klipper/klippy/mcu.py", line 1074, in _send_get_config
+    raise error(
+klippy.mcu.error: Can not update MCU 'mcu' config as it is shutdown
+No build file /home/mks/klipper/klippy/../.config
+No build file /home/mks/klipper/klippy/../out/klipper.dict
+No build file /home/mks/klipper/klippy/../out/klipper.elf
