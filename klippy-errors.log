@@ -1,0 +1,50 @@
+	{action_raise_error("Can't unload - already unloaded!")}
+	SET_GCODE_VARIABLE MACRO=_MMU_ERROR_DIALOG VARIABLE=show_abort VALUE={True}
+	SET_GCODE_VARIABLE MACRO=_MMU_ERROR_DIALOG VARIABLE=custom_msg VALUE="{custom_msg}"
+	SET_GCODE_VARIABLE MACRO=_MMU_ERROR_DIALOG VARIABLE=custom_msg VALUE="{custom_msg}"
+	SET_GCODE_VARIABLE MACRO=_MMU_ERROR_DIALOG VARIABLE=custom_msg VALUE='""'
+	SET_GCODE_VARIABLE MACRO=_MMU_ERROR_DIALOG VARIABLE=show_abort VALUE={False}
+description = Print resume with error handling
+show_error_dialog = 1
+retry_tool_change_on_error = 0
+effect_error = mmu_red_strobe, (1, 0, 0)
+max_error = 400
+shutdown_speed = 1
+shutdown_speed = 1
+shutdown_speed = 1
+shutdown_value = 0
+variable_user_mmu_error_extension = ""
+	{ action_raise_error("REVERSE_HOMING is QIDI vendor-only and unsupported on this Kalico load-cell setup. Use G28 + Z_TILT_ADJUST instead.") }
+	{ action_raise_error("REVERSE_HOMING is QIDI vendor-only and unsupported on this Kalico load-cell setup. Use G28 + Z_TILT_ADJUST instead.") }
+	{action_raise_error("ENABLE=%s not supported. Allowed values are [True, False]" % params.ENABLE|capitalize)}
+	{action_raise_error("VERBOSE=%s not supported. Allowed values are [True, False]" % params.VERBOSE|capitalize)}
+	{action_raise_error("CUSTOM_POS_X=%s must be within [%s - %s]" % (params.CUSTOM_POS_X, min.x, max.x))}
+	{action_raise_error("CUSTOM_POS_Y=%s must be within [%s - %s]" % (params.CUSTOM_POS_Y, min.y, max.y))}
+	{action_raise_error("CUSTOM_POS_DZ=%s must be within [%s - %s]" % (params.CUSTOM_POS_DZ, min.z, max.z))}
+	{action_raise_error("PARK_ENABLE=%s not supported. Allowed values are [True, False]" % params.PARK_ENABLE|capitalize)}
+	{action_raise_error("PARK_POS=%s not supported. Allowed values are [CENTER, FRONT_LEFT, FRONT_RIGHT, BACK_LEFT, BACK_RIGHT, CUSTOM, X_ONLY, Y_ONLY]"
+	{action_raise_error("PARK_TIME=%s must be a positive number" % params.PARK_TIME)}
+	{action_raise_error("TRAVEL_SPEED=%s must be larger than 0" % params.TRAVEL_SPEED)}
+	{action_raise_error("RETRACT_SPEED=%s must be larger than 0" % params.RETRACT_SPEED)}
+	{action_raise_error("EXTRUDE_SPEED=%s must be larger than 0" % params.EXTRUDE_SPEED)}
+	{action_raise_error("EXTRUDE_DISTANCE=%s must be specified as positiv number" % params.EXTRUDE_DISTANCE)}
+	{action_raise_error("RETRACT_DISTANCE=%s must be specified as positiv number" % params.RETRACT_DISTANCE)}
+	{action_raise_error("[firmware_retraction] not defined in printer.cfg. Can not enable fw_retract")}
+	{action_raise_error("FW_RETRACT=%s not supported. Allowed values are [True, False]" % params.FW_RETRACT|capitalize)}
+	{action_raise_error("Hyperlapse: No valid input parameter
+	{action_raise_error("Toolhead z %.3f to low. Please place head above z = 5.0" % act.z)}
+max_error = 120
+max_error = 400
+max_error = 300
+shutdown_speed = 0.0
+shutdown_speed = 0
+shutdown_speed = 1.0
+shutdown_speed = 0
+shutdown_speed = 1
+shutdown_speed = 0.0
+shutdown_value = 0
+shutdown_value = 0
+shutdown_value = 0
+MCU error during connect
+    raise error(
+klippy.mcu.error: Can not update MCU 'mcu' config as it is shutdown

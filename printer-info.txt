@@ -1,0 +1,17 @@
+{
+    "result": {
+        "app": "Kalico",
+        "state": "error",
+        "state_message": "Can not update MCU 'mcu' config as it is shutdown\nOnce the underlying issue is corrected, use the\n\"FIRMWARE_RESTART\" command to reset the firmware, reload the\nconfig, and restart the host software.\nError configuring printer\n",
+        "hostname": "linaro-alip",
+        "klipper_path": "/home/mks/klipper",
+        "python_path": "/home/mks/klippy-env/bin/python",
+        "process_id": 3358,
+        "user_id": 1001,
+        "group_id": 111,
+        "log_file": "/home/mks/printer_data/logs/klippy.log",
+        "config_file": "/home/mks/printer_data/config/printer.cfg",
+        "software_version": "c1ba223e",
+        "cpu_info": "4 core ?"
+    }
+}
