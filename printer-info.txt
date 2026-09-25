@@ -6,7 +6,7 @@
         "hostname": "linaro-alip",
         "klipper_path": "/home/mks/klipper",
         "python_path": "/home/mks/klippy-env/bin/python",
-        "process_id": 3358,
+        "process_id": 5543,
         "user_id": 1001,
         "group_id": 111,
         "log_file": "/home/mks/printer_data/logs/klippy.log",
